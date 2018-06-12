@@ -1,137 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="20" passed="20">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="133440" started-at="2018-06-12T18:54:52Z" finished-at="2018-06-12T18:57:05Z">
+  <suite name="Default suite" duration-ms="19519" started-at="2018-06-12T23:03:59Z" finished-at="2018-06-12T23:04:19Z">
     <groups>
     </groups>
-    <test name="HerokuapphomeTest" duration-ms="24534" started-at="2018-06-12T18:54:52Z" finished-at="2018-06-12T18:55:16Z">
-      <class name="com.test.sqs.HerokuapphomeTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.test.sqs.HerokuapphomeTest@47542153]" name="initialize" is-config="true" duration-ms="22443" started-at="2018-06-12T18:54:52Z" finished-at="2018-06-12T18:55:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateImageGithub()[pri:0, instance:com.test.sqs.HerokuapphomeTest@47542153]" name="validateImageGithub" duration-ms="260" started-at="2018-06-12T18:55:14Z" finished-at="2018-06-12T18:55:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateImageGithub -->
-        <test-method status="PASS" signature="validateLinkelementselenium()[pri:0, instance:com.test.sqs.HerokuapphomeTest@47542153]" name="validateLinkelementselenium" duration-ms="128" started-at="2018-06-12T18:55:15Z" finished-at="2018-06-12T18:55:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLinkelementselenium -->
-        <test-method status="PASS" signature="validateheader()[pri:0, instance:com.test.sqs.HerokuapphomeTest@47542153]" name="validateheader" duration-ms="147" started-at="2018-06-12T18:55:15Z" finished-at="2018-06-12T18:55:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateheader -->
-        <test-method status="PASS" signature="validateurl()[pri:1, instance:com.test.sqs.HerokuapphomeTest@47542153]" name="validateurl" duration-ms="15" started-at="2018-06-12T18:55:15Z" finished-at="2018-06-12T18:55:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateurl -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.sqs.HerokuapphomeTest@47542153]" name="teardown" is-config="true" duration-ms="1400" started-at="2018-06-12T18:55:15Z" finished-at="2018-06-12T18:55:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.test.sqs.HerokuapphomeTest -->
-    </test> <!-- HerokuapphomeTest -->
-    <test name="ButtonsTest" duration-ms="23115" started-at="2018-06-12T18:55:16Z" finished-at="2018-06-12T18:55:40Z">
-      <class name="com.test.sqs.ButtonsTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.test.sqs.ButtonsTest@75329a49]" name="initialize" is-config="true" duration-ms="21846" started-at="2018-06-12T18:55:16Z" finished-at="2018-06-12T18:55:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateButton1()[pri:0, instance:com.test.sqs.ButtonsTest@75329a49]" name="validateButton1" duration-ms="155" started-at="2018-06-12T18:55:38Z" finished-at="2018-06-12T18:55:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateButton1 -->
-        <test-method status="PASS" signature="validateButton2()[pri:0, instance:com.test.sqs.ButtonsTest@75329a49]" name="validateButton2" duration-ms="107" started-at="2018-06-12T18:55:38Z" finished-at="2018-06-12T18:55:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateButton2 -->
-        <test-method status="PASS" signature="validateButton3()[pri:0, instance:com.test.sqs.ButtonsTest@75329a49]" name="validateButton3" duration-ms="66" started-at="2018-06-12T18:55:39Z" finished-at="2018-06-12T18:55:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateButton3 -->
-        <test-method status="PASS" signature="validateButtonCount()[pri:0, instance:com.test.sqs.ButtonsTest@75329a49]" name="validateButtonCount" duration-ms="266" started-at="2018-06-12T18:55:39Z" finished-at="2018-06-12T18:55:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateButtonCount -->
-        <test-method status="PASS" signature="validateurl()[pri:1, instance:com.test.sqs.ButtonsTest@75329a49]" name="validateurl" duration-ms="47" started-at="2018-06-12T18:55:39Z" finished-at="2018-06-12T18:55:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateurl -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.sqs.ButtonsTest@75329a49]" name="teardown" is-config="true" duration-ms="589" started-at="2018-06-12T18:55:39Z" finished-at="2018-06-12T18:55:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.test.sqs.ButtonsTest -->
-    </test> <!-- ButtonsTest -->
-    <test name="Tablevalidations" duration-ms="21878" started-at="2018-06-12T18:55:40Z" finished-at="2018-06-12T18:56:01Z">
-      <class name="com.test.sqs.Tablevalidations">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="initialize" is-config="true" duration-ms="20801" started-at="2018-06-12T18:55:40Z" finished-at="2018-06-12T18:56:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateImageGithub()[pri:0, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="validateImageGithub" duration-ms="143" started-at="2018-06-12T18:56:00Z" finished-at="2018-06-12T18:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateImageGithub -->
-        <test-method status="PASS" signature="validateLinkelementsselenium()[pri:0, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="validateLinkelementsselenium" duration-ms="112" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLinkelementsselenium -->
-        <test-method status="PASS" signature="validateTableheader()[pri:0, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="validateTableheader" duration-ms="172" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTableheader -->
-        <test-method status="PASS" signature="validateTableheadercount()[pri:0, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="validateTableheadercount" duration-ms="283" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTableheadercount -->
-        <test-method status="PASS" signature="validaterowscount()[pri:0, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="validaterowscount" duration-ms="89" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaterowscount -->
-        <test-method status="PASS" signature="validateurl()[pri:1, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="validateurl" duration-ms="31" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateurl -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.sqs.Tablevalidations@1f0f1111]" name="teardown" is-config="true" duration-ms="213" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.test.sqs.Tablevalidations -->
-    </test> <!-- Tablevalidations -->
-    <test name="ValidateLinksTest" duration-ms="63740" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:57:05Z">
+    <test name="Default test" duration-ms="19519" started-at="2018-06-12T23:03:59Z" finished-at="2018-06-12T23:04:19Z">
       <class name="com.test.sqs.ValidateLinksTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.test.sqs.ValidateLinksTest@794cb805]" name="initialize" is-config="true" duration-ms="36263" started-at="2018-06-12T18:56:01Z" finished-at="2018-06-12T18:56:38Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.test.sqs.ValidateLinksTest@47542153]" name="initialize" is-config="true" duration-ms="10565" started-at="2018-06-12T23:03:59Z" finished-at="2018-06-12T23:04:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateurl()[pri:0, instance:com.test.sqs.ValidateLinksTest@794cb805]" name="validateurl" duration-ms="47" started-at="2018-06-12T18:56:38Z" finished-at="2018-06-12T18:56:38Z">
+        <test-method status="PASS" signature="validateurl()[pri:0, instance:com.test.sqs.ValidateLinksTest@47542153]" name="validateurl" duration-ms="62" started-at="2018-06-12T23:04:10Z" finished-at="2018-06-12T23:04:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateurl -->
-        <test-method status="PASS" signature="validateEditLink()[pri:1, instance:com.test.sqs.ValidateLinksTest@794cb805]" name="validateEditLink" duration-ms="368" started-at="2018-06-12T18:56:38Z" finished-at="2018-06-12T18:56:38Z">
+        <test-method status="PASS" signature="validateEditLink()[pri:1, instance:com.test.sqs.ValidateLinksTest@47542153]" name="validateEditLink" duration-ms="511" started-at="2018-06-12T23:04:10Z" finished-at="2018-06-12T23:04:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateEditLink -->
-        <test-method status="PASS" signature="validateDeleteLink()[pri:2, instance:com.test.sqs.ValidateLinksTest@794cb805]" name="validateDeleteLink" duration-ms="379" started-at="2018-06-12T18:56:38Z" finished-at="2018-06-12T18:56:39Z">
+        <test-method status="PASS" signature="validateDeleteLink()[pri:2, instance:com.test.sqs.ValidateLinksTest@47542153]" name="validateDeleteLink" duration-ms="368" started-at="2018-06-12T23:04:11Z" finished-at="2018-06-12T23:04:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDeleteLink -->
-        <test-method status="PASS" signature="validateImageGithub()[pri:3, instance:com.test.sqs.ValidateLinksTest@794cb805]" name="validateImageGithub" duration-ms="24882" started-at="2018-06-12T18:56:39Z" finished-at="2018-06-12T18:57:03Z">
+        <test-method status="PASS" signature="validateImageGithub()[pri:3, instance:com.test.sqs.ValidateLinksTest@47542153]" name="validateImageGithub" duration-ms="4825" started-at="2018-06-12T23:04:11Z" finished-at="2018-06-12T23:04:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateImageGithub -->
-        <test-method status="PASS" signature="validateLinkelementsselenium()[pri:4, instance:com.test.sqs.ValidateLinksTest@794cb805]" name="validateLinkelementsselenium" duration-ms="697" started-at="2018-06-12T18:57:03Z" finished-at="2018-06-12T18:57:04Z">
+        <test-method status="PASS" signature="validateLinkelementsselenium()[pri:4, instance:com.test.sqs.ValidateLinksTest@47542153]" name="validateLinkelementsselenium" duration-ms="2928" started-at="2018-06-12T23:04:16Z" finished-at="2018-06-12T23:04:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLinkelementsselenium -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.sqs.ValidateLinksTest@794cb805]" name="teardown" is-config="true" duration-ms="1058" started-at="2018-06-12T18:57:04Z" finished-at="2018-06-12T18:57:05Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.sqs.ValidateLinksTest@47542153]" name="teardown" is-config="true" duration-ms="150" started-at="2018-06-12T23:04:19Z" finished-at="2018-06-12T23:04:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.test.sqs.ValidateLinksTest -->
-    </test> <!-- ValidateLinksTest -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

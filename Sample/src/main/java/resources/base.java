@@ -56,12 +56,10 @@ return driver;
 
 }
 
-//public void getScreenshot(String result) throws IOException
-//{
-	//File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+public void getScreenshot(String result) throws IOException
+{
+	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	//FileUtils.copyFile(src, new File("C://test//"+result+"screenshot.png"));
-	
-//}
-
+}
 
 }

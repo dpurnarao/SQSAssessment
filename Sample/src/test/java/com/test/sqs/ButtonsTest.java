@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,57 +20,48 @@ import pageObjects.Homepage;
 import resources.base;
 
 public class ButtonsTest extends base {
+	public static Logger log =LogManager.getLogger(base.class.getName());
 	
 
 	@BeforeTest
 
 	public void initialize() throws IOException
 	{
-		
 		driver =initializeDriver();
-		driver.get(prop.getProperty("url"));
-		
+		log.info("Driver is Intialized");
+		driver.get(prop.getProperty("url"));		
 	}
 	
 	@Test (priority=1)
 	public void validateurl() throws IOException, InterruptedException
 	{		
-		Assert.assertEquals(prop.getProperty("url"),driver.getCurrentUrl());				
+		Assert.assertEquals(prop.getProperty("url"),driver.getCurrentUrl());
+		log.info("Validated Current URL");
 	}
 	
-	
-	/*@Test
-	public void validateButtonCount1() throws IOException
-	{	
-		Homepage hp = new Homepage(driver);
-		List<WebElement> list1=hp.getButtonCount1();
-		if(Optional.ofNullable(list1)!=null)
-		assertEquals(3,list1.size());
-	}
-		*/
 	
 	@Test
 	public void validateButton1() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		Assert.assertTrue(hp.getImageGithub().isDisplayed());
-						
+		Assert.assertTrue(hp.getButton1().isDisplayed());	
+		log.info("Validated Button1");
 	}
 	
 	@Test
 	public void validateButton2() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		Assert.assertTrue(hp.getLinkelementsselenium().isDisplayed());
-				
+		Assert.assertTrue(hp.getButton2().isDisplayed());	
+		log.info("Validated Button2");
 	}
 	
 	@Test
 	public void validateButton3() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		Assert.assertTrue(hp.getLinkelementsselenium().isDisplayed());
-				
+		Assert.assertTrue(hp.getButton3().isDisplayed());	
+		log.info("Validated Button3");
 	}
 	
 	@Test
@@ -77,6 +70,7 @@ public class ButtonsTest extends base {
 		List<WebElement> list=driver.findElements(By.xpath("//a[contains(@class,'button')]"));
 		if(Optional.ofNullable(list)!=null)
 		assertEquals(3,list.size());
+		log.info("Validated Buttons Count");
 	}
 	
 	@AfterTest

@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Homepage {
-
 	
 	public WebDriver driver;
 
@@ -18,7 +17,15 @@ public class Homepage {
 	
 	@FindBy(xpath="//a[contains(@class,'button')]")
 	WebElement btnCount;
+
+	@FindBy(className="button")
+	WebElement button1;
 	
+	@FindBy(css=".button.alert")
+	WebElement button2;
+	
+	@FindBy(css=".button.success")
+	WebElement button3;
 	
 	@FindBy(xpath="//a[@href='#edit']")
 	WebElement lnkedit;
@@ -40,8 +47,7 @@ public class Homepage {
 	
      	
 	public Homepage(WebDriver driver) 
-	{
-		
+	{	
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -55,10 +61,25 @@ public class Homepage {
 
 	public WebElement getButtonCount()
 	{
-		return btnCount;
-	
+		return btnCount;	
 	}
 	
+	public WebElement getButton1()
+	{
+		return button1;	
+	}
+	
+	public WebElement getButton2()
+	{
+		return button2;	
+	}
+	
+	public WebElement getButton3()
+	{
+		return button3;	
+	}
+	
+
 	public WebElement getEditlink()
 	{
 		return lnkedit;
@@ -85,11 +106,9 @@ public class Homepage {
 		return imggithub;
 	}
 	
-	public WebElement getLinkelementsselenium()
+	public WebElement getLinkelementselenium()
 	{
 		return lnkelementsselenium;
 	}
-
-
 	
 }

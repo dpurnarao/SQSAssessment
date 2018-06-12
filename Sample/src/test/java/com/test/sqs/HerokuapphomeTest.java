@@ -56,7 +56,7 @@ public class HerokuapphomeTest extends base {
 	public void validateLinkelementselenium() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		Assert.assertTrue(hp.getLinkelementsselenium().isDisplayed());
+		Assert.assertTrue(hp.getLinkelementselenium().isDisplayed());
 		log.info("Emental selenium Link is Displayed");
 	}
 	

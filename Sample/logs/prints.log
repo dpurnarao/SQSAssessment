@@ -1,5 +1,8 @@
-19:55:04.243 [main] INFO  resources.base - Driver is Intialized
-19:55:15.057 [main] INFO  resources.base - GitHub Image is Displayed
-19:55:15.205 [main] INFO  resources.base - Emental selenium Link is Displayed
-19:55:15.368 [main] INFO  resources.base - Challenging DOM Header is Displayed
-19:55:15.399 [main] INFO  resources.base - Validated Current URL
+00:06:37.174 [main] INFO  resources.base - Validated Table rowcount
+00:06:37.280 [main] INFO  resources.base - Validated Current URL
+00:06:48.082 [main] INFO  resources.base - Driver is Intialized
+00:06:48.134 [main] INFO  resources.base - Validated Current URL
+00:06:48.517 [main] INFO  resources.base - Validated Edit Link
+00:06:48.821 [main] INFO  resources.base - Validated Delete Link
+00:06:54.293 [main] INFO  resources.base - Validated Image Github click
+00:07:02.346 [main] INFO  resources.base - Validated Elements selenium link
