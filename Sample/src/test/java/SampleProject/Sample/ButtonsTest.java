@@ -30,12 +30,10 @@ public class ButtonsTest extends base {
 		
 	}
 	
-	@Test
-	public void validateurl() throws IOException
-	{	
-		String Appurl = driver.getTitle();
-		Assert.assertEquals(prop.getProperty("url"),Appurl);
-				
+	@Test (priority=1)
+	public void validateurl() throws IOException, InterruptedException
+	{		
+		Assert.assertEquals(prop.getProperty("url"),driver.getCurrentUrl());				
 	}
 	
 	

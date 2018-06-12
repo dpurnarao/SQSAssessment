@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+   <test name="HerokuapphomeTest"> 
+   <classes>  
+      <class name="SampleProject.Sample.HerokuapphomeTest"/>
+    </classes>
+   </test> 
+   
+   <test name="ButtonsTest"> 
+   <classes>
+      <class name="SampleProject.Sample.ButtonsTest"/>
+     </classes> 
+   </test> 
+   
+   <test name="Tablevalidations"> 
+   <classes>  
+      <class name="SampleProject.Sample.Tablevalidations"/>
+   </classes> 
+   </test>            
+ 
+	<test name="ValidateLinksTest">
+    <classes>
+      <class name="SampleProject.Sample.ValidateLinksTest"/>
+    </classes> 
+   
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

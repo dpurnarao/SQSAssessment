@@ -24,55 +24,64 @@ public class ValidateLinksTest extends base {
 	public void initialize() throws IOException
 	{		
 		driver =initializeDriver();
-		driver.get(prop.getProperty("url"));		
+		driver.get(prop.getProperty("url"));	
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	@Test
+	@Test(priority=0)
 	public void validateurl() throws IOException, InterruptedException
 	{		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		Assert.assertEquals(prop.getProperty("url"),driver.getTitle());				
+		Assert.assertEquals(prop.getProperty("url"),driver.getCurrentUrl());				
 	}
 	
 	
-	@Test
+	@Test(priority=1)
 	public void validateEditLink() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		hp.getDeletelink().click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		System.out.println(driver.getTitle());
-		//Assert.assertEquals("Challenging DOM",hp.getHeader().getText());				
+		hp.getEditlink().click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		Assert.assertEquals("https://the-internet.herokuapp.com/challenging_dom#edit",driver.getCurrentUrl());				
 	}
 	
 
-	@Test
+	@Test(priority=2)
 	public void validateDeleteLink() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
 		hp.getDeletelink().click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		System.out.println(driver.getTitle());
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		Assert.assertEquals("https://the-internet.herokuapp.com/challenging_dom#delete",driver.getCurrentUrl());
 								
 	}
 	
-	@Test
-	public void validateLinkelementsselenium() throws IOException
-	{
-		Homepage hp = new Homepage(driver);
-		hp.getLinkelementsselenium().click();				
-	}
-	
+	@Test(priority=3)
 	public void validateImageGithub() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		hp.getImageGithub().click();					
+		hp.getImageGithub().click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Assert.assertEquals("https://github.com/tourdedave/the-internet",driver.getCurrentUrl());
+		driver.navigate().back();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
+	
+	@Test(priority=4)
+	public void validateLinkelementsselenium() throws IOException
+	{
+		Homepage hp = new Homepage(driver);
+		hp.getLinkelementsselenium().click();	
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		//String xx = driver.findElement(By.xpath("//html/body/header/div/div").getText());
+		//System.out.println();
+		//Assert.assertEquals("http://elementalselenium.com/",driver.getCurrentUrl());
+	}
+	
 	
 	@AfterTest
 	public void teardown()
 	{
-		driver.close();
+		driver.quit();
 		driver=null;	
 	}
 }

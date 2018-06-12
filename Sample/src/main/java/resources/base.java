@@ -13,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class base {
 
@@ -38,12 +39,15 @@ if(browserName.equals("chrome"))//execute in chrome driver
 }
 else if (browserName.equals("firefox"))
 {
-	 driver= new FirefoxDriver();
+	driver= new FirefoxDriver();
+	System.setProperty("webdriver.gecko.driver", "C:\\Eclipse\\geckodriver.exe");
 	
 }
 else if (browserName.equals("IE"))
-{
-//	IE code
+{	
+	System.setProperty("webdriver.ie.driver", "C:\\Eclipse\\IEDriverServer.exe");
+	driver=new InternetExplorerDriver();
+	driver.manage().window().maximize();
 }
 
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

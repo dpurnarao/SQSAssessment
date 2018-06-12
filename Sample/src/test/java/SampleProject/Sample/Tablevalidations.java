@@ -28,15 +28,10 @@ public class Tablevalidations extends base {
 		driver.get(prop.getProperty("url"));		
 	}
 	
-	@Test
-	public void validateurl() throws IOException
-	{	
-		Homepage hp = new Homepage(driver);
-		WebDriverWait wait = new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.visibilityOf(hp.getHeader()));
-		System.out.println(prop.getProperty("url"));
-		System.out.println(driver.getTitle());
-		Assert.assertEquals(driver.getTitle(),prop.getProperty("url"));	
+	@Test (priority=1)
+	public void validateurl() throws IOException, InterruptedException
+	{		
+		Assert.assertEquals(prop.getProperty("url"),driver.getCurrentUrl());				
 	}
 	
 	
@@ -66,16 +61,14 @@ public class Tablevalidations extends base {
 	public void validateImageGithub() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		Assert.assertTrue(hp.getImageGithub().isDisplayed());
-						
+		Assert.assertTrue(hp.getImageGithub().isDisplayed());						
 	}
 	
 	@Test
 	public void validateLinkelementsselenium() throws IOException
 	{
 		Homepage hp = new Homepage(driver);
-		Assert.assertTrue(hp.getLinkelementsselenium().isDisplayed());
-				
+		Assert.assertTrue(hp.getLinkelementsselenium().isDisplayed());				
 	}
 	
 	@AfterTest

@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SampleProject.Sample.Tablevalidations">
-        <methods>
-          <include name="validateurl"/>
-          <include name="initialize"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- SampleProject.Sample.Tablevalidations -->
-      <class name="SampleProject.Sample.HerokuapphomeTest">
+      <class name="SampleProject.Sample.ValidateLinksTest">
         <methods>
           <include name="teardown"/>
-          <include name="validateurl"/>
           <include name="initialize"/>
+          <include name="validateLinkelementsselenium"/>
         </methods>
-      </class> <!-- SampleProject.Sample.HerokuapphomeTest -->
+      </class> <!-- SampleProject.Sample.ValidateLinksTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -74,7 +74,6 @@ public class Homepage {
 	
 	public WebElement getTableHeaders()
 	{	
-		
 		return tableHeaders;
 	}
 	
