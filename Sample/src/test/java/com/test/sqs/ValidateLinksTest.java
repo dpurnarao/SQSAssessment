@@ -1,4 +1,4 @@
-package SampleProject.Sample;
+package com.test.sqs;
 
 import static org.testng.Assert.assertEquals;
 
